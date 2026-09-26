@@ -1,0 +1,5 @@
+# Generated from the combos section of randomcontainers/streamlink package.yml by randomcontainers/ci.
+# Do not edit; change package.yml in randomcontainers/streamlink instead.
+name: streamlink-ffmpeg
+owner: streamlink
+with: [ffmpeg]
