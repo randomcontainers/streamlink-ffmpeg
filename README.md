@@ -12,7 +12,7 @@ These are unofficial builds, not affiliated with or endorsed by the upstream pro
 docker run --rm ghcr.io/randomcontainers/streamlink-ffmpeg "https://www.twitch.tv/<channel>"
 ```
 
-The same images can also be pulled as `randomcontainers.com/streamlink-ffmpeg`. The examples in the [streamlink README](https://github.com/randomcontainers/streamlink#readme) work with this image too.
+The examples in the [streamlink README](https://github.com/randomcontainers/streamlink#readme) work with this image too.
 
 ## Tags
 
