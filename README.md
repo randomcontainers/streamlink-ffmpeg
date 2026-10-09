@@ -47,7 +47,7 @@ The working directory is `/work`. The image runs as UID 1000, and any other UID 
 | Package | License | Repository |
 |---|---|---|
 | [Streamlink](https://streamlink.github.io/) | `BSD-2-Clause AND BSD-3-Clause AND MIT AND Apache-2.0 AND MPL-2.0 AND ISC AND PSF-2.0 AND Unlicense AND Zlib AND LGPL-2.1-only AND LGPL-2.1-or-later` | [randomcontainers/streamlink](https://github.com/randomcontainers/streamlink) |
-| [FFmpeg](https://ffmpeg.org/) | `GPL-3.0-or-later` | [randomcontainers/ffmpeg](https://github.com/randomcontainers/ffmpeg) |
+| [FFmpeg](https://ffmpeg.org/) | `GPL-3.0-or-later AND MPL-2.0 AND BSD-3-Clause AND Zlib AND Unlicense` | [randomcontainers/ffmpeg](https://github.com/randomcontainers/ffmpeg) |
 
 ## Verifying
 
