@@ -58,7 +58,16 @@ gh attestation verify oci://ghcr.io/randomcontainers/streamlink-ffmpeg:latest \
   --repo randomcontainers/streamlink-ffmpeg --signer-repo randomcontainers/ci
 ```
 
-Images from `ghcr.io/randomcontainers/streamlink` are built in [randomcontainers/streamlink](https://github.com/randomcontainers/streamlink), so verify them with `--repo randomcontainers/streamlink --signer-repo randomcontainers/ci`.
+Each image also has a keyless cosign signature from the same workflow, for admission controllers that check cosign signatures:
+
+```sh
+cosign verify ghcr.io/randomcontainers/streamlink-ffmpeg:latest \
+  --certificate-identity https://github.com/randomcontainers/ci/.github/workflows/build.yml@refs/tags/v1 \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+  --certificate-github-workflow-repository randomcontainers/streamlink-ffmpeg
+```
+
+Images from `ghcr.io/randomcontainers/streamlink` are built in [randomcontainers/streamlink](https://github.com/randomcontainers/streamlink), so name that repository in `--repo` and `--certificate-github-workflow-repository`.
 
 ## Updates
 
