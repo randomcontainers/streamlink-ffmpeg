@@ -58,7 +58,7 @@ gh attestation verify oci://ghcr.io/randomcontainers/streamlink-ffmpeg:latest \
   --repo randomcontainers/streamlink-ffmpeg --signer-repo randomcontainers/ci
 ```
 
-Each image also has a keyless cosign signature from the same workflow, for admission controllers that check cosign signatures:
+Images published since November 2026 also have a keyless cosign signature from the same workflow, for admission controllers that check cosign signatures. Tags last built before then have only the attestation.
 
 ```sh
 cosign verify ghcr.io/randomcontainers/streamlink-ffmpeg:latest \
@@ -67,7 +67,7 @@ cosign verify ghcr.io/randomcontainers/streamlink-ffmpeg:latest \
   --certificate-github-workflow-repository randomcontainers/streamlink-ffmpeg
 ```
 
-Images from `ghcr.io/randomcontainers/streamlink` are built in [randomcontainers/streamlink](https://github.com/randomcontainers/streamlink), so name that repository in `--repo` and `--certificate-github-workflow-repository`.
+Images from `ghcr.io/randomcontainers/streamlink` are built in [randomcontainers/streamlink](https://github.com/randomcontainers/streamlink), so use `randomcontainers/streamlink` in `--repo` and `--certificate-github-workflow-repository`.
 
 ## Updates
 
